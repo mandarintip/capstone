@@ -4,15 +4,17 @@
     <meta charset="utf-8">
     <title>Capstone Project</title>
       <link href="reset.css" type="text/css" rel="stylesheet">
+      <link href="style.css" type="text/css" rel="stylesheet">
+      <link href="mobile.css" type="text/css" rel="stylesheet">
   </head>
   <body>
       
-      /--! Nav Bar --/
-      <div class="bar">
-          <div class="logo">
+      <!-- Nav Bar -->
+      <div class="bar large">
+          <a class="logo" href="#">
               <img src="resources/img/ic-logo.svg">
               <span class="bold">colmar</span><span>academy</span>
-          </div>
+          </a>
           <nav>
               <li>On campus</li>
               <li>Online</li>
@@ -21,92 +23,148 @@
           </nav>
       </div>
       
-      /!-- Banner --/
-      <div class="banner">
-          <img src="resources/img/banner.jpg" class="leftside">
+      <nav class="bar small">
+          <a href="#" title="Colmar Academy">
+              <img src="resources/img/ic-logo.svg">
+          </a>
+          <a href="#" title="On Campus">
+              <img src="resources/img/ic-on-campus.svg">
+          </a>
+          <a href="https://www.codecademy.com" target="_blank" title="Online">
+              <img src="resources/img/ic-online.svg">
+          </a>
+          <a href="#" title="Log In">
+              <img src="resources/img/ic-login.svg">
+          </a>
+      </nav>
+      
+      <!-- Banner -->
+      <div class="banner container">
+          <div class="leftside">
+              <img src="resources/img/banner.jpg">
+          </div>
           <div class="rightside">
-              <h2>learn something new everyday</h2>
-              <h4>Not for school projects, 
+              <div class="bantext">
+                  <h2>learn something new everyday</h2>
+                  <h4>Not for school projects,<br> 
                   for yourself to develop.</h4>
-              <a class="btn">Start here</a>
+                  <a href="https://www.codecademy.com" target="_blank" title="Codecademy, learn to code." class="btn">Start here</a>
+              </div>
           </div>
       </div>
       
-      /!-- Info --/
-      <div class="information">
+      <!-- Info -->
+      <div class="information container">
+          
           <div class="leftside">
-              <img src="resources/img/information-main.jpg">
+              <img src="resources/img/information-main.jpg" class="info-main">
               <h3>It doesn't hurt to keep practicing</h3>
               <p>"Learning a new skill doesn’t depend so much on how much practice you do, but how you practice. The key is to subtly vary your training with changes that keep your brain learning. By changing up your routine, new research says, you can cut the time to acquire a new skill by half."</p>
-              <h5>Emanuel, Sr Strategist at <a class="tiny">Hiring.com</a></h5>
+              <h5>Emanuel, Sr Strategist at 
+                  <a class="tiny" href="http://hiring.com/">Hiring.com</a></h5>
           </div>
+          
           <div class="rightside">
-              <div class="info">
-                  <h4>Orientation date</h4>
-                  <p>Tue 10/11 &amp; Wed 10/12: 8am&dash;3pm</p>
-                  <a class="more">Read more</a>
+              
+              <div class="info box">
+                  <img src="resources/img/information-orientation.jpg" class="squareinfo">
+                  <img src="resources/img/information-orientation-mobile.jpg" class="rectaninfo">
+                  <div class="infotext">
+                      <h4>Orientation date</h4>
+                      <p>Tue 10/11 &amp; Wed 10/12: 8am&dash;3pm</p>
+                      <a class="more" target="_blank" href="https://littlealchemy2.com/" title="Play the Little Alchemy Game">Read more</a>
+                  </div>
               </div>
-              <div class="info">
-                  <h4>Our campus</h4>
-                  <p>Find which campus is close by you</p>
-                  <a class="more">Read more</a>
+              <div class="info box">
+                  <img src="resources/img/information-campus.jpg" class="squareinfo">
+                  <img src="resources/img/information-campus-mobile.jpg" class="rectaninfo">
+                  <div class="infotext">
+                      <h4>Our campus</h4>
+                      <p>Find which campus is close by you</p>
+                      <a class="more" target="_blank" href="https://littlealchemy2.com/" title="Play the Little Alchemy Game">Read more</a>
+                  </div>
               </div>
-              <div class="info">
-                  <h4>our guest lecture</h4>
-                  <p>Join a keynote with Oliver Sack about music in medical treatment</p>
-                  <a class="more">Read more</a>
+              <div class="info box">
+                  <img src="resources/img/information-guest-lecture.jpg" class="squareinfo">
+                  <img src="resources/img/information-guest-lecture-mobile.jpg" class="rectaninfo">
+                  <div class="infotext">
+                      <h4>Our guest lecture</h4>
+                      <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+                      <a class="more" target="_blank" href="https://littlealchemy2.com/" title="Play the Little Alchemy Game">Read more</a>
+                  </div>
               </div>
+              
           </div>
+          
       </div>
       
-      /!-- Courses --/
-      <div class="courses">
+      <!-- Courses -->
+      <div class="courses container">
           <h3>Start learning</h3>
           
+        <div class="all-course">
+              
           <div class="course">
               <img src="resources/img/course-software.jpg">
-              <h4>Software engineering</h4>
-              <p>COURSES</p>
-              <p>web development, mobile development, <span>iOT, APIs</span></p>
+              <div class="ctext">
+                  <h4>Software engineering</h4>
+                  <p>COURSES</p>
+                  <p>Web Development, Mobile Development, iOT, APIs</p>
+              </div>
           </div>
           <div class="course">
               <img src="resources/img/course-computer-art.jpg">
-              <h4>Computer art</h4>
-              <p>COURSES</p>
-              <p>imaging &amp; design, web design, motion graphics &amp; visual effects, computer animation</p>
+              <div class="ctext">
+                  <h4>Computer art</h4>
+                  <p>COURSES</p>
+                  <p>Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
+              </div>
           </div>
           <div class="course">
               <img src="resources/img/course-design.jpg">
-              <h4>Design</h4>
-              <p>COURSES</p>
-              <p>user experience design, user research, visual design</p>
+              <div class="ctext">
+                  <h4>Design</h4>
+                  <p>COURSES</p>
+                  <p>User Experience Design, User Research, Visual Design</p>
+              </div>
           </div>
           
           <div class="course">
               <img src="resources/img/course-data.jpg">
-              <h4>Data</h4>
-              <p>COURSES</p>
-              <p>data science, big data, <span>SQL</span>, data visualization</p>
+              <div class="ctext">
+                  <h4>Data</h4>
+                  <p>COURSES</p>
+                  <p>Data Science, Big Data, SQL, Data Visualization</p>
+              </div>
           </div>
           <div class="course">
               <img src="resources/img/course-business.jpg">
-              <h4>Business</h4>
-              <p>COURSES</p>
-              <p>product development, business development, startup</p>
+              <div class="ctext">
+                  <h4>Business</h4>
+                  <p>COURSES</p>
+                  <p>Product Development, Business Development, Startup</p>
+              </div>
           </div>
           <div class="course">
               <img src="resources/img/course-marketing.jpg">
-              <h4></h4>
-              <p>COURSES</p>
-              <p>analytics, content marketing, mobile marketing</p>
+              <div class="ctext">
+                  <h4>Marketing</h4>
+                  <p>COURSES</p>
+                  <p>Analytics, Content Marketing, Mobile Marketing</p>
+              </div>
           </div>
+            
+        </div>
           
       </div>
       
-      /!-- Show --/
-      <div>
+      <!-- Thesis -->
+      <div class="thesis">
+        <h3>Thesis exhibit</h3>
+          
+        <div class="container">
           <div class="leftside">
-              <video src="resources/videos/thesis.mp4"></video>
+              <video src="resources/videos/thesis.mp4" controls preload="auto"></video>
               <h4>Reimagine urban</h4>
               <p>
                   Mirvac Property Group is delivering strong performance, 
@@ -116,14 +174,26 @@
               </p>
           </div>
           <div class="rightside">
-              <div class="sample">
+              <div class="sample box">
+                  <img src="resources/img/thesis-fisma.jpg">
+                  <div>
+                      <h4>Fisma: Design and Prototype</h4>
+                      <p>Designer showcase of new prototype product</p>
+                  </div>
               </div>
-              <div class="sample">
+              <div class="sample box">
+                  <img src="resources/img/thesis-now-and-then.jpg">
+                  <div
+                      <h4>Now and then</h4>
+                      <p>Research study about New York</p>
+                  </div>
               </div>
           </div>
+        </div>
+          
       </div>
       
-      /!-- Footer --/
+      <!-- Footer -->
       <footer>
           <div class="copyright">&copy; 2016 Colmar Academy. All rights reserved</div>
           <span>Terms Privacy</span>

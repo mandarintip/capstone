@@ -1,0 +1,137 @@
+@media only screen and (max-width:480px){
+    
+    .leftside, .rightside{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .container{
+        min-width: unset;
+        background-color: #F9F9F9;
+        border-bottom: 1px dotted #DED5C4;
+    }
+    
+    /* Nav Bar */
+    .large{
+        display: none;
+    }
+    
+    nav.small{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+    }
+    
+    /* Banner */
+    .banner{
+        width: 100%;
+        flex-direction: column;
+        overflow: hidden;
+        background-color: #DED5C4;
+    }
+    
+    .bantext{
+        width: 100%;
+    }
+    
+    .bantext h2{
+        margin: 4rem 2rem;
+        font-size: 3.6rem;
+    }
+    .bantext h4{
+        margin: 3rem 2rem;
+    }
+    
+    .btn{
+        margin: 0 auto 4rem auto;
+    }
+    
+    /* Info */
+    .box{
+        padding: 0;
+    }
+    .information .leftside{
+        display: none;
+    }
+    
+    .information .rightside{
+        border: none;
+        padding-top: 2rem;
+        padding-bottom: 0;
+    }
+    
+    .info{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        border: none;
+        padding-bottom: 4rem;
+    }
+    
+    .squareinfo{
+        display: none;
+    }
+    .rectaninfo{
+        display: block;
+        width: 90%;
+        margin: 2rem auto;
+    }
+    /* Very confused about margin and padding. Everything worked fine when I was doing the laptop size, but once I start the mobile size it keeps going outside the parent container.*/
+    
+    .infotext{
+        width: 90%;
+        margin: auto;
+        padding-left: 2rem;
+    }
+    
+    /* Courses */
+    .courses h3{
+        margin-bottom: 2rem;
+    }
+    
+    .courses div:first-child{
+        margin-top: 2rem;
+    }
+    
+    .course{
+        width: 90%;
+        margin: 1rem auto;
+    }
+    .course img, p{
+        display: none;
+    }
+    
+    .ctext{
+        width: 90%;
+        margin: auto;
+        padding: 2rem auto 3rem 2rem;
+        background-color: #DED5C4;
+    }
+    
+    .ctext:hover{
+        background-color: #EF7E56;
+        color: #F9F9F9;
+    }
+    
+    /* Thesis */
+    .thesis{
+        padding-bottom: 2rem;
+    }
+    
+    .thesis .container{
+        flex-direction: column;
+        margin-top: 2rem;
+        border: none;
+    }
+    
+    .thesis h4, .thesis p, .thesis .rightside{
+        display: none;
+    }
+    
+    /* Footer */
+    footer span{
+        display: none;
+    }
+}
