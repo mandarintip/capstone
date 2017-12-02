@@ -45,6 +45,7 @@
     }
     
     .btn{
+        width: 88%;
         margin: 0 auto 4rem auto;
     }
     
@@ -99,7 +100,7 @@
         width: 90%;
         margin: 1rem auto;
     }
-    .course img, p{
+    .course img, .course p{
         display: none;
     }
     
